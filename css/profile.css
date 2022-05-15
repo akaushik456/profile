@@ -1,3 +1,6 @@
+*{
+   box-sizing: border-box; 
+}
 body{
     margin: 0;
     padding: 0;
@@ -6,6 +9,13 @@ body{
 header{
     width: 100%;
     display: flex;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
 }
 nav{
     width: 100%;
@@ -21,8 +31,6 @@ nav{
 }
 .user-image img{
     width: 116px;
-    margin-left: -3%;
-    
 }
 .user-links{
     display: flex;
@@ -46,7 +54,6 @@ nav{
     width: 1480px;
     margin-left: 3%;
     background: #f5fbff;
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 .user-section-image{
@@ -134,62 +141,72 @@ nav{
     margin-right: 45px;
 }
 .user-service-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f5fbff;
+}
+.right-img {
+    width:45%
+}
+.right-img img {
     width: 100%;
+    margin-bottom: -3px;
 }
-.user-service{
-    width: 1480px;
+.left-content {
+    padding:80px;
+    width:55%;
     background: #f5fbff;
-    margin-left: 3%;
+    margin-top: -6px;
 }
-.user-my-heading{
-    float: right;
-    margin-right: 44%;
-    margin-top: -41%;
-    letter-spacing: 8px;
-    font-size: 17px;
+.left-content h1{
+   font-size: 18px;
+   letter-spacing: 3px;
 }
-.user-my-heading::after{
-    content: "";
-    width: 557px;
-    position: absolute;
-    border: 1px solid #7d7789;
-    height: 1px;
-    transform: translateY(30px);
-    background: #7d7789;
-    top: 13.2%;
-    left: 53%;
-    margin-left: 44px;
+
+.about-container {
+    display: flex;
+    flex-direction: row;
 }
 
 b{
     color: #000;
 }
-.user-double-area{
-    float: left;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 55px;
-    clear: both;
-    height: auto;
-}
+
 .left{
-    width: 40%;
-    margin-left: 46%;
-    margin-top: -65%;
+    width: 50%;
     color: #404040;
     line-height: 1.6;
 }
+.my-services{
+     list-style: none;
+}
+.my-services li{
+   line-height: 2.5;
+   margin-left: -11%;
+}
+.user-icon-play{
+    margin-right: 7%;
+}
 .right{
-    margin-top: -63%;
-    margin-right: -2%;
-    width: 36%;
+    width: 50%;
     color: #404040;
 }
 .right ul{
     list-style: none;
-    margin-top: -5%;
+    margin-top: 5%;
+}
+.right-content h2{
+    margin-top: -19%;
+    margin-left: 14%;
+    letter-spacing: 2px;
+    font-size: 21px;
+}
+.my-service-list{
+    line-height: 2.5;
+    margin-left: -11%;
 }
 .right ul li{
     margin: 0 0 18px;
@@ -203,4 +220,118 @@ b{
 }
 .second{
     display: inline-block;
+}
+.left-content-ml2{
+    padding:80px;
+    width:55%;
+    background: #f5fbff;
+}
+.left-content-ml23-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-portfolio-work{
+    letter-spacing: 2px;
+}
+.user-portfolio-image{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: -16%;
+}
+.user-portfolio-image img{
+    width: 193px;
+    margin-right: 12px;
+    margin-top: 14px;
+}
+.user-portfolio-image img:hover{
+    filter: blur(1px);
+    cursor: pointer;
+}
+.user-portfolio-details{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 58px;
+}
+.user-portfolio-list{
+    margin-left: -10px;
+    margin-top: 0;
+}
+.user-portfolio-list a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-weight: 700;
+}
+.user-youtube-play{
+    font-size: 30px;
+    margin-left: -8%;
+    color: #fff;
+    background: black;
+    padding: 5px 9px;
+    border-radius: 50%;
+    height: 41px;
+    z-index: 2;
+   
+}
+.user-full-border{
+    width: 185px;
+    border: 1px solid #333;
+}
+.my-news-image{
+   width: 100%;
+}
+.my-news-image img{
+    width: 183px;
+}
+.news-paragraph{
+    padding: 2px 16px;
+    color: #333;
+}
+.my-contact-work{
+    margin-top: -28%;
+    margin-left: 5%;
+}
+.left-container{
+    margin-left: -9%;
+    margin-top: -11%;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 22px 31px;
+    color: #bbb;
+}
+.left-container i{
+    color: #000;
+}
+.left-container-icon{
+    margin-left: 2%;
+    margin-top: -13%;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 22px 11px;
+    color: #bbb;
+}
+.left-container-icon i{
+    color: #000;
+}
+.left-container-icon-phone{
+    margin-left: 2%;
+    margin-top: -13%;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 22px 11px;
+    color: #bbb;
+}
+.left-container-icon-phone i{
+    color: #000;
+}
+.right-container-form{
+    display: flex;
+    width: 100%;
+    
 }
