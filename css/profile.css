@@ -21,11 +21,13 @@ nav{
 }
 .user-image img{
     width: 116px;
+    margin-left: -3%;
+    
 }
 .user-links{
     display: flex;
     list-style: none;
-    margin-right: 21%;
+    margin-right: 13%;
 }
 .user-link-lists{
     margin-right: 9%;
@@ -41,16 +43,21 @@ nav{
     width: 100%;
 }
 .user-container{
-    width: 1360px;
-    margin-left: 5%;
+    width: 1480px;
+    margin-left: 3%;
     background: #f5fbff;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .user-section-image{
     width: 100%;
 }
 .user-section-image img{
-    width: 48%;
+    width: 42%;
     height: 650px;
+    margin-bottom: -4px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .user-section-heading{
     position: absolute;
@@ -124,4 +131,73 @@ nav{
 }
 .user-all-icon{
     margin-right: 45px;
+}
+.user-service-container{
+    width: 100%;
+}
+.user-service{
+    width: 1480px;
+    background: #f5fbff;
+    margin-left: 3%;
+}
+.user-my-heading{
+    float: right;
+    margin-right: 44%;
+    margin-top: -41%;
+    letter-spacing: 8px;
+    font-size: 17px;
+}
+.user-my-heading::after{
+    content: "";
+    width: 557px;
+    position: absolute;
+    border: 1px solid #7d7789;
+    height: 1px;
+    transform: translateY(30px);
+    background: #7d7789;
+    top: 13.2%;
+    left: 53%;
+    margin-left: 44px;
+}
+
+b{
+    color: #000;
+}
+.user-double-area{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+    clear: both;
+    height: auto;
+}
+.left{
+    width: 40%;
+    margin-left: 46%;
+    margin-top: -65%;
+    color: #404040;
+    line-height: 1.6;
+}
+.right{
+    margin-top: -63%;
+    margin-right: -2%;
+    width: 36%;
+    color: #404040;
+}
+.right ul{
+    list-style: none;
+    margin-top: -5%;
+}
+.right ul li{
+    margin: 0 0 18px;
+    width: 341px;
+}
+.first{
+    margin-right: 9%;
+    font-weight: bold;
+}
+.second{
+    display: inline-block;
 }
