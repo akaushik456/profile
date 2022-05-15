@@ -51,12 +51,20 @@ nav{
 }
 .user-section-image{
     width: 100%;
+
 }
 .user-section-image img{
     width: 42%;
     height: 650px;
     margin-bottom: -4px;
     
+    inset: 0;
+    object-fit: cover;
+    opacity: 6;
+    transition: transform .75s;
+}
+.user-section-image img:hover{
+    transform: scale(1.15);
 }
 .user-section-heading{
     position: absolute;
