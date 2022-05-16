@@ -29,23 +29,31 @@
         <div class="left-content-ml2">
           <h2 class="my-portfolio-work">Creative Portfolio</h2>
           <ul class="user-portfolio-details">
-              <li class="user-portfolio-list"><a href="#">all</a></li>
-              <li class="user-portfolio-list"><a href="#">vimeo</a></li>
-              <li class="user-portfolio-list"><a href="youtube.html">youtube</a></li>
-              <li class="user-portfolio-list"><a href="#">soundcloud</a></li>
-              <li class="user-portfolio-list"><a href="#">image</a></li>
-              <li class="user-portfolio-list"><a href="#">detail</a></li>
-          </ul>
-          <div class="user-portfolio-image">
-              <img src="./images/insta.jpg.webp">
-              <img src="./images/insta.jpg.webp">
-              <img src="./images/insta.jpg.webp">
-              <img src="./images/insta.jpg.webp">
-              <img src="./images/insta.jpg.webp">
-              <img src="./images/insta.jpg.webp">
-          </div>
+            <li class="user-portfolio-list"><a class="active" href="#all">all</a></li>
+            <li class="user-portfolio-list"><a href="#vimeo">vimeo</a></li>
+            <li class="user-portfolio-list"><a href="#youtube">youtube</a></li>
+            <li class="user-portfolio-list"><a href="#soundcloud">soundcloud</a></li>
+            <li class="user-portfolio-list"><a href="#image">image</a></li>
+            <li class="user-portfolio-list"><a href="#detail">detail</a></li>
+        </ul>
+        <div class="div-tabs-container">
+            <div class="tabs active" id="all">all</div>
+            <div class="tabs" id="vimeo">vimeo</div>
+            <div class="tabs" id="youtube">youtube</div>
+            <div class="tabs" id="soundcloud">soundcloud</div>
+            <div class="tabs" id="image">
+                <div class="user-portfolio-image">
+                    <img src="./images/insta.jpg.webp">
+                    <img src="./images/insta.jpg.webp">
+                    <img src="./images/insta.jpg.webp">
+                    <img src="./images/insta.jpg.webp">
+                    <img src="./images/insta.jpg.webp">
+                    <img src="./images/insta.jpg.webp">
+                </div>
+            </div>
+            <div class="tabs" id="detail">detail</div>
+        </div>
        </div>
-        
     </section>
     <footer class="user-footer-section">
         <div class="user-footer-container">
@@ -57,4 +65,6 @@
         </div>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="./js/script2.js"></script>
 </html>

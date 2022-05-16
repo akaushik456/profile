@@ -222,15 +222,31 @@ b{
     display: inline-block;
 }
 .left-content-ml2{
-    padding:80px;
+    padding:63px;
     width:55%;
     background: #f5fbff;
+    overflow-y: scroll;
+    height: 641px;
 }
 .left-content-ml23-flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.ml-paragraph{
+    padding: 10px;
+    width: 100%;
+    margin: 0px 0px;
+    color: #a0a0a0;
+    font-size: 15px;
+}
+.ml-paragraph-2{
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    margin:5px 0px;
+    padding:10px;
 }
 .my-portfolio-work{
     letter-spacing: 2px;
@@ -260,6 +276,13 @@ b{
 .user-portfolio-list{
     margin-left: -10px;
     margin-top: 0;
+
+}
+.tabs {
+    display:none;
+}
+.tabs.active {
+    display:block;
 }
 .user-portfolio-list a{
     text-decoration: none;
@@ -268,6 +291,9 @@ b{
     font-size: 19px;
     font-weight: 700;
 }
+.user-portfolio-list a.active{
+    text-decoration: underline;
+} 
 .user-youtube-play{
     font-size: 30px;
     margin-left: -8%;
@@ -278,6 +304,39 @@ b{
     height: 41px;
     z-index: 2;
    
+}
+.ml-right-content{
+    width: 100%;
+    overflow: hidden;
+}
+.user-right-content{
+    display: flex;
+    width: 100%;
+}
+.user-unordered-list{
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    padding: 0;
+}
+.user-unordered-list li {
+    width: 33%;
+    padding: 10px;
+}
+.user-unordered-list li .card{ 
+    border: 1px solid rgba(0,0,0,.07);
+    overflow: hidden;
+    width: 100%;
+    
+}
+.user-unordered-list li img{
+    width: 100%;
+    transition: transform .2s;
+}
+.user-unordered-list li img:hover{
+    transform: scale(1.1);
 }
 .user-full-border{
     width: 185px;
@@ -333,5 +392,5 @@ b{
 .right-container-form{
     display: flex;
     width: 100%;
-    
+
 }
